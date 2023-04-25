@@ -1,0 +1,50 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    
+}
+:root {
+    --main-color: ;
+    --btn-color: #FE9724;
+    --gradient-color: linear-gradient(180deg,#FFB767,#FE9724);
+    --text-color-1: #743838;
+    --text-color-2: #2A2A22;
+    --text-color-3: #ABAFB2;
+    --bg-card: linear-gradient(180deg,#F6F2FF,#C1D2E1);
+    --margin-glb: 60px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input:focus {
+    outline: none;
+}
+.container {
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Component */
