@@ -1,15 +1,10 @@
-.header {
-    margin-bottom: var(--margin-glb);
-    border-bottom: 3px solid black;
+.landing {
+    padding-block: var(--margin-glb);
+    background-image: url(../resources/10882@2x.png);
+    background-size: cover;
 }
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+.landing img {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
