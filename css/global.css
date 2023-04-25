@@ -1,7 +1,8 @@
 /* Start Global Rules */
 * {
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
 :root {
     --main-color: ;
@@ -48,3 +49,72 @@ input:focus {
     }
 }
 /* Component */
+.component {
+   text-align: center;
+}
+.component h1 {
+    color: var(--text-color-2);
+    font-weight: 500;
+    font-size: 60px;
+}
+.component h3 {
+	color: var(--text-color-1);
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 10px;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* Style Border */
+.component h3::before {
+	content: "";
+	position: absolute;
+	width: 65%;
+	height: 4px;
+	background-color: var(--btn-color);
+	bottom: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.component p {
+	font-size: 21px;
+	color: var(--text-color-3);
+}
+@media (max-width: 991px) {
+    .component h1 {
+        font-size: 48px;
+    }   
+    .component h3 {
+        font-size: 24px;
+    }   
+    .component p {
+        font-size: 16px;
+    }   
+}
+@media (max-width: 767px) {
+    .component h1 {
+        font-size: 32px;
+    }   
+    .component h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }   
+    .component p {
+        font-size: 12px;
+    }   
+    .component h3::before {
+        height: 3px;
+    }
+}
+@media (max-width: 470px) {
+    .component h1 {
+        font-size: 24px;
+    }   
+    .component p {
+        font-size: 9px;
+    }   
+    .component h3::before {
+        height: 2px;
+    }
+}
