@@ -5,7 +5,7 @@
     padding: 0;
 }
 :root {
-    --main-color: ;
+    --main-color: #FFB767;
     --btn-color: #FE9724;
     --gradient-color: linear-gradient(180deg,#FFB767,#FE9724);
     --text-color-1: #743838;
@@ -117,4 +117,7 @@ input:focus {
     .component h3::before {
         height: 2px;
     }
+}
+.hidden {
+    display: none;
 }
