@@ -10,7 +10,7 @@
 
 }
 .landing .slide1 {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../resources/slide2.jpg); 
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../resources/462927.jpg);
 }
 /* .landing .slide2 {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../resources/slide2.jpg); 
@@ -19,14 +19,13 @@
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../resources/slide2.jpg); 
 } */
 .landing .info {
-    width: 40%;
-    text-align: center;
-    text-align: start;
+	width: 100%;
+	max-width: 500px;
 }
 .landing h1 {
-	font-size: 62px;
+	font-size: 53px;
 	color: white;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Montserrat', sans-serif,-apple-system;
 	margin-bottom: 35px;
 }
 .landing #order-now {
@@ -46,10 +45,7 @@
         font-size: 45px;
     }
 }
-@media (max-width: 767px) {
-    .landing .info {
-        width: 47%;
-    }
+@media (max-width: 767px) { 
     .landing #order-now {
         font-size: 16px;
         padding: 10px 13px;
@@ -58,12 +54,11 @@
         font-size: 36px;
     }
 }
-@media (max-width: 560px) {
+@media (max-width: 480px) {
     .landing .info {
-        width: 64%;
         text-align: center;
     }
-}
-body {
-    height: 200vh;
+    .landing .info h1 {
+        font-size: 30px;
+    }
 }
