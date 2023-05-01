@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/* Start Landing */
 .landing .slide {
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -12,12 +12,6 @@
 .landing .slide1 {
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../resources/462927.jpg);
 }
-/* .landing .slide2 {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../resources/slide2.jpg); 
-} */
-/* .landing .slide3 {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../resources/slide2.jpg); 
-} */
 .landing .info {
 	width: 100%;
 	max-width: 500px;
@@ -62,3 +56,177 @@
         font-size: 30px;
     }
 }
+/* End Landing  */
+
+/* Start reserve Section */
+.reserve {
+    background-color: #f8f8ff;
+    padding-block: var(--margin-glb);
+    margin-bottom: var(--margin-glb);
+}
+.reserve .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    min-height: 400px;
+  }
+
+  .reserve .container .info {
+    flex-basis: 40%;
+    
+}
+  .reserve .info p {
+    color: #707070;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: var(--margin-glb);
+  }
+  
+  .reserve .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFB767;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  .reserve .btn:hover {
+    background-color: var( --btn-color);
+  }
+  
+  .reserve .image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+  }
+  @media (max-width:767px) {
+    .reserve .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px 0px;
+        
+      }
+      .reserve .container .info {
+        width: 60%;
+        text-align: start;
+        
+        
+    }
+    .reserve .info p {
+        font-size: 24px;
+      }
+  }
+
+  @media (max-width:450px) {
+    .reserve .info {
+        width: 100%;
+   
+    }
+    .reserve .info p {
+        font-size: 22px;
+      }
+     
+  }
+/* End Reseerve Section */
+/* Start delivery section */
+.delivery {
+    position: relative;
+    margin-bottom: var(--margin-glb);
+}
+
+  /*  boxes section */
+  .delivery .boxes {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px
+  } 
+  /*  box section */
+  .delivery .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding:  25px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 290px;
+  }
+  
+  .delivery .boxes .box .image img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .delivery .boxes .box h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+  .delivery .boxes .box h3::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: var(--btn-color);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+.delivery .boxes .box p {
+	font-size: 20px;
+	color: #686868;
+}
+@media (max-width: 1200px) {
+    .delivery .boxes .box p {
+        font-size: 17px;
+    }
+    .delivery .boxes .box h3 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 991px) {
+    .delivery .boxes .box {
+        height: 255px;
+    }
+    .delivery .boxes .box p {
+        font-size: 14px;
+    }
+    .delivery .boxes .box h3 {
+        font-size: 21px;
+    }
+}
+@media (max-width: 767px) {
+    .delivery .boxes .box {
+        height: 200px;
+    }
+    .delivery .boxes .box p {
+        font-size: 14px;
+    }
+    .delivery .boxes .box h3 {
+        font-size: 21px;
+    }
+    .delivery .boxes {
+        grid-template-columns: 80%;
+        gap: 50px
+    }
+}
+@media (max-width: 460px) {
+    .delivery .boxes .box {
+        height: 240px;
+    }
+}
+/* END Delvery Section */

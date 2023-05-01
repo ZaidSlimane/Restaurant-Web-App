@@ -11,7 +11,7 @@
     --text-color-1: #743838;
     --text-color-2: #2A2A22;
     --text-color-3: #ABAFB2;
-    --bg-card: linear-gradient(180deg,#F6F2FF,#C1D2E1);
+    --bg-card: #F6F2FF;
     --margin-glb: 60px;
 }
 html {
@@ -51,6 +51,7 @@ input:focus {
 /* Component */
 .component {
    text-align: center;
+   margin-bottom: 50px;
 }
 .component h1 {
     color: var(--text-color-2);
