@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/book_table.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" id="Home">
+        <div class="container">
+            <div class="logo">
+                <img src="" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Testminials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="book_table.html" id="table-res">Table Reservtion</a>
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="form">
+        <div class="container">
+            <h3 class="form-title">
+                Book Table
+            </h3>
+            <div class="form-wrapper">
+                <form action="" name="booking">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="First Name" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="Last Name" id="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberPhone">Number Phone</label>
+                        <input type="tel" name="Number Phone" id="numberPhone">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="tableType">Table Type</label>
+                        <select name="Table Type" id="tableType">
+                            <option selected disabled>Choose</option>
+                            <option value="small">Small(2persons)</option>
+                            <option value="medium">Medium(4persons)</option>
+                            <option value="large">Large(6persons)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="placement">Placement</label>
+                        <select name="Placement" id="placement">
+                            <option selected disabled>Choose</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="rooftop">Rooftop</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" name="Date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" name="Time" id="time">
+                    </div>
+                    <div class="form-group full">
+                        <label for="note">Note</label>
+                        <textarea name="Note" id="note" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Book Table</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
