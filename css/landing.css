@@ -16,9 +16,10 @@
 }
 
 .Testimonials_container {
+    background-color: #f8f8ff;
     background-color: #F8F8FF;
     width: 100%;
-    padding: 2%;
+    padding: 10%;
     display: flex;
 }
 
@@ -91,61 +92,73 @@
 
 /* Make all footers full width */
 footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: white;
-    height: auto;
+    padding-bottom: 10rem;
     width: 100vw;
-    padding-top: 40px;
     color: black;
-}
-
-
-footer .container {
-    border: 1px solid black;
     display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-items: center;
+    align-items: center;
     justify-content: space-between;
-    right: 0 auto;
 }
+
 
 .links_container{
-    width: 40%;
+    width: 30%;
     border: 1px solid black;
      display: flex;
      justify-content: space-between;
      left: auto;
 }
 
-footer .useful {
-    margin-bottom: 2rem;
-}
 
 .description{
     border:    1px solid black;
-    width: 35%;
+    width: 30%;
     text-justify: auto;
 }
 .links_container p{
-    font-size: medium;
-    font-weight: 500;
-    color: #743838;
+    font-size: large;
+    color: #835151;
     left: 0;
+    font-weight: bold;
     font-size: large;
     margin-bottom: 20px;
 }
 
-A{
+.A{
     justify-content: space-between;
 }
+
+  footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+  footer li {
+    margin-bottom: 15%;
+  }
+
 
 
 .payment_methods{
     display: flex;
     width: 10%;
+    justify-content: space-between;
+    margin-top: 20%;
     aspect-ratio: 1;
     
+}
+
+.payment_methods img{
+    padding: 5%;
+    justify-content: space-evenly;
 }
 
 .links_container p{
@@ -210,7 +223,25 @@ A{
 }
 
 
-@media  (max-width: 775px ) {
+@media  (max-width: 767px ) {
+
+    .Testimonials_container .container{
+        flex-direction: column; 
+    }
+
+    .Testimonials_container .picture_container{
+        padding-top: 5%;
+    }
+
+    .Testimonials_container .reviews_container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Testimonials_container .reviews_container .review_text{
+        width: fit-content;
+    }
+
     footer {
         width: 100%;
         margin-top: auto 0;
@@ -240,6 +271,8 @@ A{
     .links_container{
         font-size: small;
     }
+
+}
 
     @media screen and (max-width: 695px) {
 
@@ -298,13 +331,10 @@ A{
         }
     }
 
-    }
 
-
-    
 
 /* Start Landing */
-.landing .slide {
+.landing {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
@@ -314,7 +344,7 @@ A{
     align-items: center;
 
 }
-.landing .slide1 {
+.landing{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../resources/462927.jpg);
 }
 .landing .info {
@@ -437,6 +467,8 @@ A{
     .reserve .info p {
         font-size: 22px;
       }
+
+    
      
   }
 /* End Reseerve Section */
