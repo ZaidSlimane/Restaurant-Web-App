@@ -67,7 +67,7 @@ input:focus {
     margin: 0 auto;
 }
 /* Style Border */
-.component h3::before {
+.component h3::before{
 	content: "";
 	position: absolute;
 	width: 65%;
@@ -75,6 +75,7 @@ input:focus {
 	background-color: var(--btn-color);
 	bottom: -4px;
 	left: 50%;
+    z-index: 99;
 	transform: translateX(-50%);
 }
 .component p {
