@@ -8,3 +8,5 @@ burgerBtn.onclick = function () {
     let menu = document.querySelector(".header nav ul")
     menu.classList.toggle("active");
 }
+
+

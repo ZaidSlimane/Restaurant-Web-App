@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 26px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 .header nav a {
@@ -52,7 +52,7 @@
     padding: 10px 20px;
     padding-right: 20px;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     position: relative;
     z-index: 1;
@@ -85,7 +85,7 @@
 }
 @media (max-width: 991px) {
     .header nav ul{
-        font-size: 14px;
+        font-size: 15px;
         gap: 20px;
     }
     .header nav {
@@ -113,6 +113,8 @@
         text-align: start;
         overflow: hidden;
         padding-top: 23px;
+        visibility: hidden;
+        opacity: none;
     }
     .header nav ul li{
         background-color: rgba(0, 0,0,0.4);
@@ -130,7 +132,6 @@
         display: block;
         font-size: 16px;
         padding: 15px;
-        border-bottom: 1px solid #f7f3f338;
     }
     .header nav ul li:last-child a {
         border-bottom: none;
