@@ -1,0 +1,138 @@
+.page_title{
+    justify-content: center;
+    text-align: center;
+}
+
+/* CART SECTION*/
+
+.container .order_summary{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding-right:1rem ;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    height: 50vw;
+    background-color: rgb(217, 223, 223);
+}
+
+
+.items_row{
+    margin-top: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+.name_image_ofItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity_price{
+    display: flex;
+    
+}
+
+.item_info .image{
+    background-color: rgb(195, 195, 195);
+    width: 180px;
+    height: 60px;
+    border-radius: 20%;
+    margin-right: 1rem;
+
+}
+
+.item_info{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item_name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    
+}
+
+.quantity_buttons{
+    width: fit-content;
+    display: flex;
+    padding-left: rem;
+    margin-left: 0.5rem;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    border-color: none;
+    border-width: none;
+
+}
+
+.quantity_buttons p{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.item_price p {
+ margin-left: 1rem;
+}
+
+.quantity_price .item_remove_icon img {
+
+    margin-left: 1rem;
+    width: 20px;
+}
+
+.code_promo_section {
+    margin-left: 1rem;
+}
+
+input{
+    outline: none;
+    border: none;
+    width: 50%;
+    padding: 0.2rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 3px 2px rgba(205, 205, 205, 0.8); /* Horizontal offset, vertical offset, blur radius, RGBA color */
+}
+.code_promo_section p {
+    margin-bottom: 0.5rem;
+}
+
+.counting {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.counting p {
+  margin-bottom: 0.5;
+}
+/* CART SECTION*/
+
+
+/* CHECKOUT SECTION*/
+.checkout{
+    width: 50%;
+    height: 100vw;
+    background-color: rgb(217, 223, 223);
+}
+
+/* CHECKOUT SECTION*/
+
