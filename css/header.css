@@ -31,7 +31,7 @@
     align-items: center;
     gap: 35px;
 }
-.header nav ul{
+.header nav > ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,9 +39,34 @@
     font-size: 17px;
     font-weight: 600;
 }
+.header nav .burger ul {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 26px;
+    font-size: 17px;
+    font-weight: 600;
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+    padding-block: 18px;
+    background-color: rgba(0, 0,0,0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    top: 88px;
+}
+.header nav .burger ul.active {
+    visibility: visible;
+    opacity: 1;
+    top: 102px;
+    transition: all 0.4s;
+}
 .header nav a {
     color: white;
-    transition: all 0.3s ;
+    transition: all 0.3s;
 }
 .header nav a:hover {
     color: var(--btn-color);
@@ -84,7 +109,7 @@
     cursor: pointer;
 }
 @media (max-width: 991px) {
-    .header nav ul{
+    .header nav > ul{
         font-size: 15px;
         gap: 20px;
     }
@@ -101,7 +126,7 @@
         display: block;
         font-size: 26px;
     }
-    .header nav ul {
+    .header nav > ul {
         display: block;
         flex-direction: column;
         justify-content: center;
@@ -116,49 +141,53 @@
         visibility: hidden;
         opacity: none;
     }
-    .header nav ul li{
-        background-color: rgba(0, 0,0,0.4);
-        transform: translateY(-40px);
-        opacity: 0;
-        visibility: hidden;
-    }
-    .header nav ul.active li{
+    .header nav  ul.active li{
         transform: translateY(0px);
         opacity: 1;
         visibility: visible;
         transition: all 0.3s linear;
     }
-    .header nav ul li a {
+    .header nav .burger ul li a {
         display: block;
         font-size: 16px;
-        padding: 15px;
+        padding: 8px 14px;
+        color: white;
     }
-    .header nav ul li:last-child a {
+    .header nav > ul li:last-child a {
         border-bottom: none;
     }
     .fixed nav ul li a {
         color: black;
         font-weight: 500;
     }
-    .fixed nav ul li {
+    .fixed nav ul  {
         background-color: white;
+    }
+    .fixed nav .burger ul {
+        background-color: #262431;
+    }
+    .header ul.menu-norm {
+        display: none;
+        transition: none;
     }
 }
 .fixed {
     position: fixed;
     top: 0;
-    background-color: white;
-    width: 100%;
-    color: black;
+    background-color: #262431;
+    width: 102vw;
+    border-radius: 0;
+    color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: none;
 }
 
 .fixed nav a {
-    color: black;
+    color: white;
 }
 .fixed #table-res {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     font-weight: 500;
 }
 .fixed  nav ul {

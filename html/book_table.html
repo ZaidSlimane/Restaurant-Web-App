@@ -19,21 +19,27 @@
 </head>
 
 <body>
-    <div class="header" id="Home">
+    <div class="header fixed" id="Home">
         <div class="container">
             <div class="logo">
                 <img src="" alt="Logo">
             </div>
             <nav>
-                <ul>
+                <ul class="menu-norm">
                     <li><a href="home_page.html">Home</a></li>
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="#">Testminials</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <a href="book_table.html" id="table-res">Table Reservtion</a>
                 <div class="burger">
                     <i class="fa-solid fa-bars"></i>
+                    <ul>
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">Testminials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -62,7 +68,7 @@
                         <label for="numberPhone">Number Phone</label>
                         <input type="tel" name="Number Phone" id="numberPhone">
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="tableType">Table Type</label>
                         <select name="Table Type" id="tableType">

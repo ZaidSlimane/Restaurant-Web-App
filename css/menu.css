@@ -1,0 +1,76 @@
+
+.menu {
+    padding-block: var(--margin-glb);
+    padding-top: 140px;
+}
+.menu h2 {
+    margin: 10px auto 60px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.1px;
+}
+.menu .options-menu ul {
+    display: grid;
+    grid-template-columns: repeat(6,165px);
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.menu .options-menu ul li {
+	color: white;
+	background-color: #262431;
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: capitalize;
+	padding: 9px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: all 0.3s;
+}
+.menu .options-menu ul li:hover {
+    background-color: #f9982a;
+    cursor: pointer;
+}
+.menu .our-menu .products{
+    padding-inline: 5px;
+}
+
+@media (max-width: 1200px) {
+    .menu .options-menu ul {
+        grid-template-columns: repeat(6,1fr);
+        gap: 25px;
+    }
+    .menu .options-menu ul li {
+        font-size: 22px;
+    }
+}
+@media (max-width: 993.5px) {
+    .menu .options-menu ul {
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
+    .menu .options-menu ul li {
+        padding: 9px 2.5px;
+    }
+}
+@media (max-width: 745px) {
+    .menu .options-menu ul {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+    .menu .options-menu ul li {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .menu .options-menu ul {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        justify-content: center;
+    }
+}
+

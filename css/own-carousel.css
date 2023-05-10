@@ -1,0 +1,43 @@
+:root {
+    --width: 0;
+    --margin: 0;
+    --own-width: 1205px;
+}
+
+.own-carousel__outer {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    width: var(--own-width)
+}
+
+.own-carousel{
+    display: flex;
+    
+}
+
+.own-carousel__item {
+    flex-shrink: 0;
+    overflow: hidden;
+    flex-basis: var(--width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.own-carousel__item:not(:first-child) {
+    margin-left: var(--margin);
+}
+@media (max-width: 1200px){
+    :root {
+        --own-width : 685px;
+        --width-psudo : 570px;
+    }
+    
+}
+@media (max-width: 765px){
+    :root {
+        --own-width : 95vw;
+        --width-psudo : 89vw;
+    }
+}
