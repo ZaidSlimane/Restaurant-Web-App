@@ -1,0 +1,383 @@
+.check-out {
+    padding-block: var(--margin-glb);
+    padding-top: 140px;
+}
+.check-out h2 {
+    margin: 10px auto 36px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.1px;
+}
+.check-out .step-conifrm {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8C9BAA;
+    position: relative;
+    row-gap: 10px;
+    margin-bottom: 70px;
+}
+.check-out .step-conifrm > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 7px;
+}
+.check-out .step-conifrm::before{
+    position: absolute;
+    top: 7px;
+    left: calc(50% - 112.5px);
+    content: "";
+    width: 220px;
+    height: 1px;
+    background-color: rgb(58, 55, 55);
+    z-index: -1;
+} 
+.check-out .cycles {
+    width: 225px;
+    margin: 0 auto;
+}
+.check-out .cycle {
+    width: 18px;
+    height: 18px;
+    background-color: #e8ecf1;
+    border-radius: 50%;
+}
+.check-out .select  {
+    border: 3px solid var(--btn-color);
+}
+.check-out .container {
+    display: flex;
+    justify-content: space-between;
+}
+.check-out .box-summary {
+	background-color: #F4F6F8;
+	width: 40%;
+    height: fit-content;
+	padding: 45px 30px;
+	border-radius: 12px;
+}
+.check-out .order-summary .mini {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	margin-bottom: 26px;
+	align-items: center;
+}
+.check-out .order-summary .mini > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+.check-out .order-summary .mini > div:first-child span {
+    font-weight: 500;
+    color: #3F4C58;
+}
+.check-out .order-summary .mini .remove-all {
+    font-size: 14px;
+    color: #8998A8;
+}
+.check-out .order-summary .mini .remove-all:hover {
+    color: #252628;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.check-out .products .row {
+	display: flex;
+	align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.check-out .products .info span:first-child {
+    font-weight: 600;
+    font-size: 14px;
+}
+.check-out .products .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.check-out .products .info span:last-child {
+    font-weight: 200;
+    font-size: 12px;
+}
+.check-out .products .product-img {
+    background-color: #DEDEDE;
+    width: 70px;
+    height: 67px;
+    border-radius: 20%;
+    margin-right: 12px;
+}
+.check-out .products .calc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    flex-grow: 1;
+}
+.check-out .products .calc > div:not(:last-child) {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #A7B5C6;
+	background-color: #DFE8F2;
+	font-size: 12px;
+	cursor: pointer;
+}
+.check-out .products .calc > div:not(:last-child):hover {
+    color: #788088;
+}
+.check-out .products .calc .trash {
+    font-size: 14px;
+    color: #8394a5;
+    transition: 0.2s all;
+    margin-left: 4px;
+}
+.check-out .products .calc .trash:hover {
+    color: #35393d;
+}
+.check-out .products .calc span{
+	font-size: 16px;
+}
+.check-out .products .calc .result {
+    margin-left: 2px;
+}
+.check-out .info-payment {
+	background-color: #F4F6F8;
+	width: 58%;
+	padding: 45px 30px;
+	border-radius: 12px;
+}
+.check-out .info-payment h4 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.check-out .info-payment label {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 4px;
+}
+.check-out .info-payment input {
+	height: 40px;
+	box-shadow: 0px 3px 6px #00000019;
+	border: none;
+	padding-left: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.check-out .info-payment .f-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    row-gap: 13px;
+}
+.check-out .info-payment .suite {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.check-out .payment-methods {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.check-out .payment-methods div {
+	width: 82px;
+	height: 75px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	border-radius: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: 0.2s all;
+}
+.check-out .payment-methods div img {
+    max-width: 100%;
+}
+.check-out .payment-methods div:not(:first-child) img {
+    max-width: 71%;
+}
+.check-out .payment-methods div.select {
+    border: 2px solid #FFB300;
+    transition: none;
+}
+.check-out .payment-methods div:hover {
+    transform: translateY(5px);
+}
+.check-out .carte-visa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 13px;
+}
+.check-out .carte-visa div:not(.card-number) {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 181px;
+	gap: 30px;
+	row-gap: 11px;
+}
+.check-out #proceed ,
+.check-out #cancel{
+    margin-top: 35px;
+    padding: 7px 12px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--btn-color);
+    transition: all 0.3s;
+    width: 180px;
+    height: auto;
+}
+.check-out #cancel {
+    width: 90px;
+    color: white;
+    background-color: #A7A7A7;
+    margin-left: 25px;
+}
+.check-out .card-number {
+    position: relative;
+}
+.check-out .card-number img {
+	position: absolute;
+	background: white;
+	height: 28px;
+	right: 6px;
+	top: 4px;
+}
+.check-out .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #A8B9CC4A;
+    margin: 30px auto;
+}
+.check-out .calc-result {
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+	justify-content: space-between;
+	gap: 13px;
+    padding: 9px;
+    font-size: 15px;
+}
+.check-out .calc-result span:nth-child(7),
+.check-out .calc-result #total {
+    font-weight: 700;
+}
+@media (max-width: 1200px) {
+    .check-out .box-summary {
+        padding: 35px 15px;
+    }
+    .check-out .info-payment {
+        padding: 35px 15px;
+    }
+    .check-out .products .calc span {
+        font-size: 14px;
+    }
+    .check-out .products .product-img {
+        background-color: #DEDEDE;
+        width: 62px;
+        height: 56px;
+    }
+    .check-out .products .info span:first-child {
+        font-size: 13px;
+    }
+    .check-out .products .calc > div:not(:last-child) {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .check-out .info-payment h4 {
+        font-size: 21px;
+    }
+}
+@media (max-width: 991.5px) {
+    .check-out .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .check-out .info-payment, 
+    .check-out .box-summary {
+        width: 445px;
+    }
+    .check-out .info-payment input {
+        height: 30px;
+        font-size: 15px;
+    }
+    .check-out .products .calc {
+        gap: 8px;
+    }
+    .check-out .products .calc span {
+        font-size: 15px;
+    }
+    .check-out .products .product-img {
+        width: 72px;
+        height: 65px;
+    }
+    .check-out .products .info span:first-child {
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    .check-out .info-payment .f-1 {
+        grid-template-columns: 1fr;
+    }
+    .check-out .info-payment .f-1 > *:nth-child(2) {
+        grid-area: 3;
+    } 
+    .check-out .info-payment, 
+    .check-out .box-summary {
+        width: 100%;
+    }
+    .check-out .products .product-img {
+        width: 56px;
+        height: 54px;
+    }
+    .check-out .products .calc .result {
+        margin-left: 0px;
+    }
+    .check-out .box-summary {
+        padding: 25px 10px;
+    }
+    .check-out .products .calc > div:not(:last-child) {
+        width: 15px;
+        height: 15px;
+        font-size: 11px;
+    }
+    .check-out .products .calc {
+        gap: 4px;
+    }
+    .check-out .products .product-img {
+        margin-right: 9px;
+    }
+    .check-out .products .info span:first-child {
+        font-size: 12px;
+        max-width: 100px;
+    }
+    .check-out .products .info span:last-child {
+        font-weight: 200;
+        font-size: 10px;
+        max-width: 98px;
+    }
+    .check-out .step-conifrm {
+        font-size: 12px;
+        font-weight: 500;
+        color: #8C9BAA;
+        padding-inline: 23px;
+    }
+    .check-out .calc-result {
+        font-size: 13px;
+    }
+}

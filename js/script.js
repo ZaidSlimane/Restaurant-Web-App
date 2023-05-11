@@ -12,3 +12,19 @@ burgerBtn.onclick = function () {
     let menu = document.querySelector(".header nav .burger ul")
     menu.classList.toggle("active");
 }
+let paymentMethods = document.querySelectorAll(".check-out .payment-methods div");
+document.querySelectorAll(".check-out .payment-methods div").forEach(function (el) {
+    el.onclick = function (ev) {
+        paymentMethods.forEach(el => {
+            if (el != this) {
+                el.classList.remove("select")
+            }
+        })
+        this.classList.toggle("select");
+    }
+})
+document.querySelector(".card-number input").onkeypress = function (ev) {
+    if (Number.isNaN(+ev.key)) {
+        ev.preventDefault();
+    }
+}
